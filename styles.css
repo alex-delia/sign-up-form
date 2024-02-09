@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'Norse';
+    src: url('fonts/norse-bold-webfont.woff') format('woff');
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+body,
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+.leftContainer {
+    position: relative;
+    flex: 0 0 30%;
+}
+
+.leftContainerBackground {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.logoContainer {
+    width: 100%;
+    height: 15%;
+    position: absolute;
+    top: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 75%;
+}
+
+.odin {
+    color: white;
+    font-family: 'Norse';
+    font-size: 4rem;
+}
+
+.imageCredit {
+    width: 100%;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    color: white;
+}
+
+.imageCredit a {
+    color: white;
+}
+
+.rightContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    box-sizing: border-box;
+    flex: 0 0 30%;
+    background-color: rgb(241, 241, 241);
+    padding-left: 60px;
+    padding-top: 60px;
+}
+
+.hook {
+    font-size: 1.3rem;
+    font-weight: 600;
+    width: 70%;
+}
+
+.hook:first-child {
+    margin-bottom: 0;
+}
+
+.hook:nth-child(2) {
+    margin-top: 0;
+}
+
+.body {
+    flex: 0 0 35%;
+    padding: 20px;
+    padding-left: 60px;
+    box-shadow: 0 5px 5px 5px rgb(135, 135, 135);
+}
+
+label {
+    display: block;
+}
+
+.formRow {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 20px;
+}
+
+input {
+    border: solid 1px rgb(202, 202, 202);
+    border-radius: 4px;
+    height: 30px;
+    width: 250px;
+}
+
+input:focus {
+    border-color: blue;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+.footer {
+    flex: 1 1 30%;
+    background-color: rgb(241, 241, 241);
+    padding-left: 60px;
+    padding-top: 30px;
+    box-shadow: 0 5px 5px 5px rgb(135, 135, 135);
+}
+
+.createAccount {
+    font-size: 1rem;
+    padding: 16px 60px;
+    border-radius: 8px;
+    background-color: #326b41;
+    color: white;
+    border: none;
+}
+
+.logIn {
+    text-decoration: none;
+    color: #326b41;
+}
+
+.logIn:hover {
+    text-decoration: underline;
+}
