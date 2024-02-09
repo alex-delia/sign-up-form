@@ -27,7 +27,7 @@ div {
 
 .leftContainer {
     position: relative;
-    flex: 0 0 30%;
+    flex: 1 0 30%;
 }
 
 .leftContainerBackground {
@@ -73,6 +73,7 @@ div {
 .rightContainer {
     display: flex;
     flex-direction: column;
+    flex: 1 0 70%;
 }
 
 .header {
@@ -124,6 +125,10 @@ input {
 input:focus {
     border-color: blue;
     box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.2);
+}
+
+input:invalid {
+    border-color: red;
 }
 
 .footer {
